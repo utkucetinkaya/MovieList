@@ -22,16 +22,16 @@ struct Movie: Codable {
 
 // MARK: - Result
 struct Result: Codable {
-    let backdropPath, firstAirDate: String
-    let genreIDS: [Int]
-    let id: Int
-    let name: String
-    let originCountry: [String]
-    let originalLanguage, originalName, overview: String
-    let popularity: Double
-    let posterPath: String
-    let voteAverage: Double
-    let voteCount: Int
+    let backdropPath, firstAirDate: String?
+    let genreIDS: [Int]?
+    let id: Int?
+    let name: String?
+    let originCountry: [String]?
+    let originalLanguage, originalName, overview: String?
+    let popularity: Double?
+    let posterPath: String?
+    let voteAverage: Double?
+    let voteCount: Int?
 
     enum CodingKeys: String, CodingKey {
         case backdropPath = "backdrop_path"

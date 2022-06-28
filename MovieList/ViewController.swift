@@ -54,6 +54,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         vc.overView = self.movie?.results[indexPath.row].overview ?? ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }
